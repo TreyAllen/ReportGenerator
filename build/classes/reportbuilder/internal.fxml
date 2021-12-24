@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="357.0" prefWidth="443.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="reportbuilder.InternalController">
+    
+    <children>
+      <Pane fx:id="bkgrndPane" prefHeight="357.0" prefWidth="443.0" stylesheets="@styles/styles.css" />
+      <HBox fx:id="progressSpinner" layoutX="200.0" layoutY="251.0" prefHeight="44.0" prefWidth="45.0" styleClass="loadingGIFHbox" stylesheets="@styles/styles.css" visible="false" />
+      <HBox fx:id="logoHBox" layoutX="89.0" layoutY="307.0" prefHeight="25.0" prefWidth="268.0" styleClass="prioritySystemsLogoHbox" stylesheets="@styles/styles.css" />
+      <Label fx:id="reportGenLabel" alignment="CENTER" layoutX="20.0" layoutY="86.0" prefHeight="68.0" prefWidth="381.0" stylesheets="@styles/styles.css" text="Report Generator">
+         <font>
+            <Font name="System Bold Italic" size="46.0" />
+         </font>
+      </Label>
+      
+      <Label fx:id="versionLabel" layoutX="402.0" layoutY="122.0" prefHeight="17.0" prefWidth="37.0" stylesheets="@styles/styles.css" text="v#">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="amsLabel" layoutX="34.0" layoutY="80.0" prefHeight="17.0" prefWidth="165.0" stylesheets="@styles/styles.css" text="Alarm Monitoring Services Inc." textFill="#9e021d">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </Label>
+      <Button fx:id="logoutButton" layoutX="340.0" layoutY="21.0" mnemonicParsing="false" onAction="#logoutButtonHandleAction" prefHeight="5.0" prefWidth="57.0" styleClass="darkButton" stylesheets="@styles/styles.css" text="Logout" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="getReportButton" layoutX="127.0" layoutY="192.0" mnemonicParsing="false" onAction="#getResultsButtonHandleAction" prefHeight="25.0" prefWidth="191.0" styleClass="maroonButton" stylesheets="@styles/styles.css" text="Get Report" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label fx:id="reportStatusLabel" alignment="TOP_CENTER" contentDisplay="CENTER" layoutY="229.0" prefHeight="17.0" prefWidth="443.0" styleClass="blueText" stylesheets="@styles/styles.css" text="Generating report..." visible="false" />
+      <Label fx:id="errorStatusLabel" alignment="TOP_CENTER" contentDisplay="CENTER" layoutY="229.0" prefHeight="68.0" prefWidth="443.0" styleClass="redText" stylesheets="@styles/styles.css" text="error label" visible="false" />
+      <ProgressBar fx:id="reportProgressBar" layoutX="126.0" layoutY="253.0" prefHeight="18.0" prefWidth="191.0" progress="0.0" style="-fx-accent: #9e021d;" visible="false" />
+      <Button fx:id="saveReportButton" layoutX="127.0" layoutY="250.0" mnemonicParsing="false" onAction="#saveButton" prefHeight="25.0" prefWidth="191.0" styleClass="lightButton" stylesheets="@styles/styles.css" text="Save Report" visible="false">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Label fx:id="userNameLabel" layoutX="44.0" layoutY="20.0" prefHeight="27.0" prefWidth="292.0" stylesheets="@styles/styles.css" text="Hello, &lt;username&gt;!">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Label>
+      <Separator layoutY="60.0" prefHeight="5.0" prefWidth="443.0" />
+      <Button fx:id="colorModeButton" alignment="BASELINE_CENTER" contentDisplay="CENTER" layoutX="400.0" layoutY="21.0" mnemonicParsing="false" onAction="#colorModeSwitchOnClick" prefHeight="18.0" prefWidth="27.0" styleClass="darkModeOff" stylesheets="@styles/styles.css" textAlignment="CENTER">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      
+      
+    </children>
+    
+</AnchorPane>

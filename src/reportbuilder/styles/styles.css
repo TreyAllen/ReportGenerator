@@ -1,0 +1,94 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Nov 20, 2020, 4:03:21 PM
+    Author     : Trey
+*/
+
+.whiteText { -fx-text-fill: #e3e3e3; }
+.blackText { -fx-text-fill: black; }
+.blueText { -fx-text-fill: #2600ff; }
+.maroonText { -fx-text-fill: #9e021d; }
+.redText { -fx-text-fill: #ff0000; }
+.pinkText { -fx-text-fill: #ffaca6; }
+
+.darkModeBkgrnd {-fx-background-color: #363636}
+.lightModeBkgrnd {-fx-background-color: #f4f4f4}
+
+
+
+.prioritySystemsLogoHbox{
+    -fx-background-image: url('../images/PrioritySystemsLogo.png');
+    -fx-background-size: contain;
+    -fx-background-repeat: no-repeat;
+}
+
+.prioritySystemsLogoHboxDark{
+    -fx-background-image: url('../images/PrioritySystemsLogo.png');
+    -fx-background-size: contain;
+    -fx-background-repeat: no-repeat;
+    -fx-effect: dropshadow( one-pass-box , black , 8 , 0.0 , 2 , 0 );
+}
+
+.loadingGIFHbox{
+    -fx-background-image: url('../images/throbber_12.gif');
+    -fx-background-size: contain;
+    -fx-background-repeat: no-repeat;
+}
+
+.darkButton {
+    -fx-background-color:
+        linear-gradient(#828282, #000000),
+        radial-gradient(center 50% -40%, radius 200%, #828282 45%, #474747 50%);
+    -fx-background-radius: 6, 5;
+    -fx-background-insets: 0, 1;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.4) , 5, 0.0 , 0 , 1 );
+    -fx-text-fill: #ffffff;
+}
+
+.lightButton {
+    -fx-background-color:
+        linear-gradient(#a3a3a3, #000000),
+        radial-gradient(center 50% -40%, radius 200%, #a3a3a3 45%, #828282 50%);
+    -fx-background-radius: 6, 5;
+    -fx-background-insets: 0, 1;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.4) , 5, 0.0 , 0 , 1 );
+    -fx-text-fill: #ffffff;
+}
+
+.maroonButton {
+    -fx-background-color:
+        linear-gradient(#9e021d, #000000),
+        radial-gradient(center 50% -40%, radius 200%, #9e021d 45%, #5e0011 50%);
+    -fx-background-radius: 6, 5;
+    -fx-background-insets: 0, 1;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.4) , 5, 0.0 , 0 , 1 );
+    -fx-text-fill: #ffffff;
+}
+
+.darkModeOff {
+    -fx-background-image: url('../images/dark-mode.png');
+    -fx-background-size: contain;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-radius: 6, 5;
+    -fx-background-insets: 0, 1;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.4) , 5, 0.0 , 0 , 1 );
+}
+
+.darkModeOn {
+    -fx-background-image: url('../images/Daylight-icon.png');
+    -fx-background-size: contain;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-color:
+        linear-gradient(#ffffff, #f0f0f0),
+        radial-gradient(center 50% -40%, radius 200%, #ffffff 45%, #f0f0f0 50%);
+    -fx-background-radius: 6, 5;
+    -fx-background-insets: 0, 1;
+    -fx-effect: dropshadow( three-pass-box , rgba(255,255,255,0.4) , 5, 0.0 , 0 , 1 );
+}
+

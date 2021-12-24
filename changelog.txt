@@ -1,0 +1,27 @@
+Version 1.0	11/20/20
+* Implementation
+
+Version 2.0	11/30/20
+* Adjusted code to pull extra field from site, MapCoordinates
+
+Version 2.1	12/2/20
+* Added day/night mode toggle button
+* Added appropriate error messages when username or password not provided
+* Added appropriate error messages on invalid login attempts when account is locked
+* Added appropriate error messages when session has expired
+
+Version 2.2	12/9/20
+* Set default color scheme to dark mode
+* Added expired password error message on login screen
+* Adjust column header names and order in output file
+
+Version 3.0	12/16/20
+* Updated report parameters to only pull BillingID field from Site
+* Updated report parameters to not include SiteID2 from XtAdvancedSearch
+* Updated output report to name column "BillingID"
+
+Version 3.1	12/17/20
+* Added back in SiteID2/Legacy_No field XtAdvancedSearch and updated output report
+
+Version 3.2	8/4/21
+* Adjusted output items for each row to be encapsulated in double quotes to avoid unexpected parsing if data has commas in it i.e. John Doe, Inc as the site name

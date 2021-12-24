@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="Report Builder.jnlp">
+  <information>
+    <title>Report Builder</title>
+    <vendor>Alarm Monitoring Services</vendor>
+    <description>Application to generate custom report.</description>
+    <offline-allowed/>
+  <shortcut><desktop/></shortcut>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="PrioritySystems_ReportBuilder.jar" size="832701" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="Report Builder" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="reportbuilder.ReportBuilder"  name="Report Builder" />
+  <update check="always"/>
+</jnlp>
